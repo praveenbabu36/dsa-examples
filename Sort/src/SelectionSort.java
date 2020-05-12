@@ -16,11 +16,13 @@ public class SelectionSort
         {
             System.out.println("UnsortedPartIdx: " + unsortedPartIdx);
 
-            int largest = 0; // largest element first element
+            int largest = 0; // index of largest element as first element
             for (int i = 1; i < unsortedPartIdx; i++) {
 
                 System.out.println("   largest: " + largest  + " i:" + i);
-                if (intArray[i] > intArray[largest]) { //if element in the array is larger, change the larger variable
+
+                //if element in the array is larger, change the index of the larger element
+                if (intArray[i] > intArray[largest]) {
                     largest = i;
                 }
             }
