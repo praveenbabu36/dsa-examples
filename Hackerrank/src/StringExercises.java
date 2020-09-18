@@ -189,12 +189,26 @@ public class StringExercises {
         }*/
 
 
-        String IP = "213";
+/*        String IP = "213";
         //String IP = "I.Am.not.an.ip";
         //String IP = "266.266.266.266";"
         //String IP = "255.255.255.254";
-        System.out.println(IP.matches(new MyRegex().pattern));
+        System.out.println(IP.matches(new MyRegex().pattern));*/
 
+        // Number of words
+        String str = "saveChangesInTheEditor";
+        int numOfWords = 0;
+        if(str.length() > 1){
+            numOfWords = 1;
+        }
+        for(int i=0; i<str.length(); i++ ) {
+            String letter_ = String.valueOf(str.charAt(i));
+            if( letter_ != letter_.toLowerCase()) {
+                numOfWords++;
+            }
+        }
+
+        System.out.println(numOfWords);
     }
 
     /*private static int countOccurences(String str, char ch, int index) {
@@ -204,6 +218,7 @@ public class StringExercises {
         int count = str.charAt(index) == ch ? 1 : 0;
         return count + countOccurences(str, ch, index + 1);
     }*/
+
 
 
 }
