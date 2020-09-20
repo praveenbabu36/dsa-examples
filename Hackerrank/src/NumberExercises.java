@@ -1,4 +1,5 @@
 import java.math.BigInteger;
+import java.util.Arrays;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -68,6 +69,55 @@ public class NumberExercises {
         }
         System.out.println(maxOneOccurances);*/
 
+
+        /**
+         * find apples and oranges
+         */
+/*        int[] apples = {2, 3, -4};
+        int[] oranges = {3, -2, -4};
+        countApplesAndOranges(7, 10, 4, 12, apples, oranges);*/
+
+        /**
+         * find pairs
+         */
+
+        /*int n = 1;
+        int[] ar =  {10};
+
+        Arrays.sort(ar);
+
+        int countPairs = 0;
+        for(int i=0;i<n-1;i++){
+            if(ar[i]==ar[i+1]){
+                countPairs++;
+                i++;
+            }
+        }
+
+        System.out.println(countPairs);*/
+
+
+    }
+
+    static void countApplesAndOranges(int s, int t, int a, int b, int[] apples, int[] oranges) {
+
+        int appleCount = 0;
+        int orangeCount = 0;
+
+        for(int i : apples){
+            if ( (a + i) >= s && (a+i) <= t) {
+                appleCount ++;
+            }
+        }
+
+        for(int i : oranges){
+            if ( (b + i) >= s && (b+i) <= t) {
+                orangeCount ++;
+            }
+        }
+
+        System.out.println(appleCount);
+        System.out.println(orangeCount);
 
     }
 
