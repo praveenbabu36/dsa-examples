@@ -170,7 +170,41 @@ public class NumberExercises {
 
         System.out.println(arr2);*/
 
+        /**
+         * https://www.hackerrank.com/challenges/breaking-best-and-worst-records/problem
+         */
+        //int[] scores = {10, 5, 20, 20, 4, 5, 2, 25, 1};
+        int[] scores = {3, 4, 21, 36, 10, 28, 35,5, 24, 42};
 
+        int highScore = 0;
+        int lowScore  = 0;
+
+        int highCount = 0;
+        int lowCount  = 0;
+
+        int[] result = new int[2];
+
+        for(int i=0; i<scores.length; i++) {
+
+            if(i==0) {
+                highScore = scores[0];
+                lowScore = scores[0];
+            }
+
+            if(scores[i] > highScore) {
+                highScore = scores[i];
+                highCount++;
+            }
+
+            if(scores[i] < lowScore) {
+                lowScore = scores[i];
+                lowCount++;
+            }
+        }
+
+        result[0] = highCount;
+        result[1] = lowCount;
+        System.out.println(highCount + " " + lowCount);
 
     }
 
