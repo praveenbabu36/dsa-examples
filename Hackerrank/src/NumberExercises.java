@@ -1,5 +1,7 @@
 import java.math.BigInteger;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -95,6 +97,98 @@ public class NumberExercises {
         }
 
         System.out.println(countPairs);*/
+
+        /**
+         *  Kangaroo:
+         *  It should return YES if they reach the same position at the same time,
+         *    or NO if they don't.
+         */
+/*        System.out.println( kangaroo(43, 2, 70, 2) );*/
+
+        /**
+         * Between Two Sets
+         */
+        /*List<Integer> arr = new ArrayList<>();
+        arr.add(2);
+        arr.add(6);
+
+        List<Integer> brr = new ArrayList<>();
+        brr.add(24);
+        brr.add(36);
+        //brr.add(96);
+
+        List<Integer> arr1 = new ArrayList<>();
+        for(int i=1; i<=brr.get(0); i++) {
+            boolean divideFlag = false;
+
+            for(int j=0; j<arr.size(); j++){
+                //System.out.print(i + " " + arr.get(j));
+                if( (i % arr.get(j) ) == 0 ) {
+                    divideFlag = true;
+                }else{
+                    divideFlag = false;
+                    break;
+                }
+                //System.out.println(" " + divideFlag);
+            }
+
+            if(divideFlag) {
+                arr1.add(i);
+            }
+
+        }
+
+        //System.out.println(arr1 + " " + arr1.size());
+        //System.out.println(brr + " " + brr.size());
+
+        List<Integer> arr2 = new ArrayList<>();
+
+        for(int i=0; i<arr1.size(); i++) {
+
+            boolean divideFlag = false;
+
+
+            for(int j=0; j<brr.size(); j++){
+                //System.out.println();
+                //System.out.print( brr.get(j) + " " + arr1.get(i) );
+                if( (brr.get(j) % arr1.get(i) ) == 0 ) {
+                    divideFlag = true;
+                }else{
+                    divideFlag = false;
+                    break;
+                }
+
+                //System.out.print(" " + divideFlag);
+
+            } // end for
+
+            if(divideFlag) {
+                arr2.add(arr1.get(i));
+            }
+
+        }// outer for
+
+        System.out.println(arr2);*/
+
+
+
+    }
+
+    //Between Two Sets
+    public static int getTotalX(List<Integer> a, List<Integer> b) {
+        // Write your code here
+        return 1;
+    }
+
+    static String kangaroo(int x1, int v1, int x2, int v2) {
+
+        if ( (x1>=x2 && v1 >= v2) || (x2 >= x1 && v2>=v1) ) {
+            return "NO";
+        }
+        if( ((x1-x2) % (v1-v2)) == 0 )
+            return "YES";
+        else
+            return "NO";
 
 
     }
