@@ -13,6 +13,10 @@ public class PhoneBook {
         phone = 11122222;
         phoneBook.put(name, phone);
 
+        name = "praveen";
+        phone = 123123;
+        phoneBook.put(name, phone);
+
         System.out.println(phoneBook);
 
         String toFind = "tom";
