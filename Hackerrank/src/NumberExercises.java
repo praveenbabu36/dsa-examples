@@ -174,7 +174,7 @@ public class NumberExercises {
          * https://www.hackerrank.com/challenges/breaking-best-and-worst-records/problem
          */
         //int[] scores = {10, 5, 20, 20, 4, 5, 2, 25, 1};
-        int[] scores = {3, 4, 21, 36, 10, 28, 35,5, 24, 42};
+        int[] scores = {3, 4, 21, 36, 10, 28, 35};
 
         int highScore = 0;
         int lowScore  = 0;
@@ -204,7 +204,9 @@ public class NumberExercises {
 
         result[0] = highCount;
         result[1] = lowCount;
+
         System.out.println(highCount + " " + lowCount);
+
 
     }
 
