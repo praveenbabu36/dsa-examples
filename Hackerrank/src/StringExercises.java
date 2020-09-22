@@ -196,7 +196,7 @@ public class StringExercises {
         System.out.println(IP.matches(new MyRegex().pattern));*/
 
         // Number of words
-        String str = "saveChangesInTheEditor";
+        /*String str = "saveChangesInTheEditor";
         int numOfWords = 0;
         if(str.length() > 1){
             numOfWords = 1;
@@ -208,7 +208,7 @@ public class StringExercises {
             }
         }
 
-        System.out.println(numOfWords);
+        System.out.println(numOfWords);*/
     }
 
     /*private static int countOccurences(String str, char ch, int index) {
